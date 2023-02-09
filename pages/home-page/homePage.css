@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.navigationBar {
+    height: 60px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.menuList {
+    display: flex;
+}
+
+.menuItem {
+    list-style-type: none;
+}
+
+.menuItem {
+    margin-right: 15px;
+}
+
+.header {
+    display: flex;
+    padding: 45px 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 110, 206);
+    /* padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px; */
+}
+
+.imgContainer {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    margin-right: 50px;
+}
+
+.header>.informationContainer {
+    width: 600px;
+}
+
+.callButton {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.popularCourses > .title {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.popularCourses{
+    padding: 20px 0px 50px;
+}
+
+.courseBoxContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.courseBox {
+    width: 250px;
+    background-color: rgb(255, 98, 98);
+    padding: 15px;
+}
+
+.courseImgContainer {
+    height: 125px;
+    background-color: rgb(67, 67, 67);
+}
+
+.courseDescription {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buyButton {
+    padding: 10px;
+
+}
