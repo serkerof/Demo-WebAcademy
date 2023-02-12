@@ -4,16 +4,91 @@
     box-sizing: content-box;
 }
 
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.backgroundDecoration {
+    background-color: ;
+}
+
 .navigationBar {
-    height: 60px;
-    border: 1px solid black;
+    text-align: center;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
+    opacity: 1;
+}
+
+.firmLogo {
+    height: 80px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.menuLinks {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    transition: .2s ease;
+    text-align: center;
+
+}
+
+.menuLinks:last-child {
+    margin-right: 0px;
+}
+
+.menuLinks:hover {
+    color: #1f51ff;
+}
+
+.login {
+    text-decoration: none;
+    background-color: #1f51ff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.login:hover {
+    background-color: #fff;
+    color: #1f51ff;
+}
+
+.register {
+    text-decoration: none;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.register:hover {
+    background-color: #fff;
+    color: red;
+
+
 }
 
 .menuList {
+    margin-right: 300px;
+    align-items: center;
     display: flex;
 }
 
@@ -26,39 +101,141 @@
 }
 
 .header {
+
+    height: 60vh;
     display: flex;
-    padding: 45px 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 110, 206);
+    justify-content: start;
+    align-items: start;
     /* padding-left: 50px;
     padding-right: 50px;
     padding-top: 0px;
     padding-bottom: 0px; */
 }
 
-.imgContainer {
-    width: 500px;
-    height: 500px;
-    background-color: gray;
-    margin-right: 50px;
+.headerInformationContainer {
+    width: 75%;
 }
 
-.header>.informationContainer {
-    width: 600px;
+.headerTitleContainer {
+
+    margin-top: 50px;
+    margin-left: 100px;
+    align-items: center;
 }
 
-.callButton {
-    margin-top: 30px;
-    padding: 10px;
+.headerTitle {
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+    width: 70%;
 }
 
-.popularCourses > .title {
+.headerDiscription {
+    margin-top: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 60px;
+    width: 100%;
+}
+
+.headerSlogan {
+    margin-top: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    height: 60px;
+}
+
+.headerGraduatedContainer {
+    position: relative;
+    align-items: center;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerGraduated {
+    width: 150px;
+    height: 60px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.headerGraduated:last-child {
+    margin-right: 0px;
+}
+
+.graduatedTitle {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #dbdbdb;
+}
+
+.graduatedInfo {
+
+    text-transform: uppercase;
+    color: #dbdbdb;
+}
+
+.bookButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bookButton {
+    margin-left: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.bookButton:hover {
+    color: red;
+    background-color: #fff;
+}
+
+.headerImgContainer {
+    position: relative;
+    top: 20px;
+    right: -145px;
+    background-size: cover;
+    background-image: url(/Demo-WebAcademy/pages/home-page/img/57831009origa.jpeg);
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.Location {
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #1f51ff;
+    top: 90px;
+    right: -25px;
+
+
+}
+
+.popularCourses>.title {
+
+    color: #fff;
     text-align: center;
     margin: 20px 0px;
 }
 
-.popularCourses{
+.popularCourses {
+    height: 100vh;
+
+    background-color: #242582;
     padding: 20px 0px 50px;
 }
 
@@ -68,22 +245,82 @@
 }
 
 .courseBox {
-    width: 250px;
-    background-color: rgb(255, 98, 98);
+    text-align: center;
+    background-color: #553d67;
+    width: 30%;
+    height: 45%;
     padding: 15px;
+    border-radius: 8px;
 }
 
-.courseImgContainer {
-    height: 125px;
-    background-color: rgb(67, 67, 67);
+.courseBox:hover {
+    box-shadow: 5px 5px 20px;
+}
+
+.courseStudying {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: start;
 }
 
 .courseDescription {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: gray;
+    text-align: start;
+    top: 55%;
+
 }
 
-.buyButton {
-    padding: 10px;
+.coursePrice {
+
+    text-align: end;
+    color: #1f51ff;
+}
+
+.courseBoxTitle {
+    margin-bottom: 50px;
+    text-align: start;
+}
+
+.courseBoxButtons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.orderButton {
+    margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f64c72;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 15px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.orderButton:hover {
+
+    color: red;
+    background-color: #fff;
+
+}
+
+.moreButton {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 15px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.moreButton:hover {
+    color: red;
+    background-color: #fff;
 
 }
