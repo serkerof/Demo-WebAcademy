@@ -5,11 +5,11 @@
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .backgroundDecoration {
-    background-color: black
+    background-color: ;
 }
 
 .navigationBar {
@@ -58,13 +58,11 @@
     margin-right: 10px;
     border-radius: 6px;
     transition: .3s ease;
-
 }
 
 .login:hover {
     background-color: #fff;
     color: #1f51ff;
-
 }
 
 .register {
@@ -114,11 +112,15 @@
     padding-bottom: 0px; */
 }
 
+.headerInformationContainer {
+    width: 75%;
+}
+
 .headerTitleContainer {
 
     margin-top: 50px;
     margin-left: 100px;
-    align-items: start;
+    align-items: center;
 }
 
 .headerTitle {
@@ -141,14 +143,21 @@
     color: #fff;
     text-transform: uppercase;
     height: 60px;
-    width: 60%;
+}
+
+.headerGraduatedContainer {
+    position: relative;
+    align-items: center;
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .headerGraduated {
+    width: 150px;
     height: 60px;
-    margin-top: 245px;
+    margin-left: 50px;
     text-align: center;
-    margin-right: 20px;
 }
 
 .headerGraduated:last-child {
@@ -167,28 +176,14 @@
     color: #dbdbdb;
 }
 
-.headerImgContainer {
-    margin-left: 50px;
-    background-size: cover;
-    background-image: url(/Demo-WebAcademy/pages/home-page/img/57831009origa.jpeg);
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
+.bookButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.Location {
-    padding: 1px 10px;
-    border-radius: 3px;
-    text-align: center;
-    color: #fff;
-    background-color: #1f51ff;
+.bookButton {
     margin-left: 50px;
-    margin-top: 90px;
-
-
-}
-
-.callButton {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
@@ -199,23 +194,48 @@
     padding: 10px 15px;
     cursor: pointer;
     transition: .3s ease;
-    position: absolute;
-    margin-top: 300px;
-    margin-left: 648px;
 }
 
-.callButton:hover {
+.bookButton:hover {
     color: red;
     background-color: #fff;
+}
+
+.headerImgContainer {
+    position: relative;
+    top: 20px;
+    right: -145px;
+    background-size: cover;
+    background-image: url(/Demo-WebAcademy/pages/home-page/img/57831009origa.jpeg);
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.Location {
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #1f51ff;
+    top: 90px;
+    right: -25px;
+
 
 }
 
 .popularCourses>.title {
+
+    color: #fff;
     text-align: center;
     margin: 20px 0px;
 }
 
 .popularCourses {
+    height: 100vh;
+
+    background-color: #242582;
     padding: 20px 0px 50px;
 }
 
@@ -225,22 +245,82 @@
 }
 
 .courseBox {
-    width: 250px;
-    background-color: rgb(255, 98, 98);
+    text-align: center;
+    background-color: #553d67;
+    width: 30%;
+    height: 45%;
     padding: 15px;
+    border-radius: 8px;
 }
 
-.courseImgContainer {
-    height: 125px;
-    background-color: rgb(67, 67, 67);
+.courseBox:hover {
+    box-shadow: 5px 5px 20px;
+}
+
+.courseStudying {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: start;
 }
 
 .courseDescription {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: gray;
+    text-align: start;
+    top: 55%;
+
 }
 
-.buyButton {
-    padding: 10px;
+.coursePrice {
+
+    text-align: end;
+    color: #1f51ff;
+}
+
+.courseBoxTitle {
+    margin-bottom: 50px;
+    text-align: start;
+}
+
+.courseBoxButtons {
+    display: flex;
+    margin-top: 15px;
+}
+
+.orderButton {
+    margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f64c72;
+    border: none;
+    padding: 20px 80px;
+    border-radius: 15px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.orderButton:hover {
+
+    color: red;
+    background-color: #fff;
+
+}
+
+.moreButton {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 15px;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.moreButton:hover {
+    color: red;
+    background-color: #fff;
 
 }
