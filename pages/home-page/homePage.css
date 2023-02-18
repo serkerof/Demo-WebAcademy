@@ -46,46 +46,6 @@
     color: #1f51ff;
 }
 
-.login {
-    text-decoration: none;
-    background-color: #ff595a;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin-right: 10px;
-    border-radius: 6px;
-    transition: .3s ease;
-}
-
-.login:hover {
-    background-color: #fff;
-    color: #ff595a;
-}
-
-.register {
-    text-decoration: none;
-    background-color: #ff595a;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    margin-left: 10px;
-    border-radius: 6px;
-    transition: .3s ease;
-}
-
-.register:hover {
-    background-color: #fff;
-    color: #ff595a;
-
-
-}
-
 .menuList {
     margin-right: 300px;
     align-items: center;
@@ -100,7 +60,62 @@
     margin-right: 15px;
 }
 
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu>li {
+    margin: 0 1rem;
+    overflow: hidden;
+}
+
+.burger_menu_container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#burger_menu {
+    display: none;
+}
+
+.menu_button,
+.menu_button::before,
+.menu_button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: "";
+    margin-top: -8px;
+}
+
+.menu-button::after {
+    content: "";
+    margin-top: 8px;
+}
+
+#burger_menu:checked+.burger_menu_container .menu_button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+
 .header {
+    position: relative;
     color: #fff;
     height: 70vh;
     display: flex;
@@ -140,7 +155,6 @@
 
 .headerSlogan {
     margin-top: 40px;
-
     text-transform: uppercase;
     height: 60px;
 }
@@ -176,29 +190,50 @@
 
 }
 
-.bookButtonContainer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.account {
+    position: absolute;
+    top: 80%;
+    left: 80%;
 }
 
-.bookButton {
-    margin-left: 50px;
-    text-transform: uppercase;
+.login {
     text-decoration: none;
-    color: #fff;
     background-color: #ff595a;
-    border: 1px solid #ff595a;
-    border-radius: 6px;
+    color: #fff;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
     cursor: pointer;
+    margin-right: 10px;
+    border-radius: 6px;
     transition: .3s ease;
 }
 
-.bookButton:hover {
-    color: #ff595a;
+.login:hover {
     background-color: #fff;
+    color: #ff595a;
+}
+
+.register {
+    text-decoration: none;
+    background-color: #ff595a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.register:hover {
+    background-color: #fff;
+    color: #ff595a;
+
+
 }
 
 .headerImgContainer {
@@ -481,29 +516,33 @@
 }
 
 .footerContact {
-     margin-bottom: 5%;
+    margin-bottom: 5%;
     display: flex;
 }
-.footerContact:last-child{
+
+.footerContact:last-child {
     margin-bottom: 0;
 }
 
 .footerLinks:hover {
     cursor: pointer;
 }
-.copyrighted{
+
+.copyrighted {
     color: #fff;
     font-weight: bold;
     font-size: medium;
     align-items: center;
-    padding:2% 0;
+    padding: 2% 0;
     text-align: center;
     height: 5vh;
     background-color: #ff595a;
 }
 
 /*  For Tablet */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+   
+}
 
 /* For Mobile */
 @media only screen and (max-width: 480px) {}
